@@ -15,9 +15,14 @@ const routes = [
         component: () => import('@/views/LoginView.vue')
     },
     {
-        path: '/create-event',
-        name: 'create-event',
-        component: () => import('@/views/CreateEvent.vue')
+        path: '/create-event-info',
+        name: 'create-event-info',
+        component: () => import('@/views/CreateEventInfo.vue')
+    },
+    {
+        path: '/create-event-media',
+        name: 'create-event-media',
+        component: () => import('@/views/CreateEventMedia.vue')
     }
 ]
 

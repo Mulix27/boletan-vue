@@ -31,7 +31,7 @@
               <!-- Mensaje cuando no tienes eventos -->
               <p v-if="eventos.length === 0">Aún no tienes eventos</p>
               <!-- Botón "Crear evento" -->
-              <router-link v-else-if="eventos.length > 0" to="/create-event"><button class="button is-primary">Crear
+              <router-link v-else-if="eventos.length > 0" to="/create-event-info"><button class="button is-primary">Crear
                   evento</button></router-link>
             </div>
           </div>
