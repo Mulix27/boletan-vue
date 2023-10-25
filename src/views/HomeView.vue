@@ -13,17 +13,17 @@
         </div>
 
         <div class="card pb-6">
-          <div>
+          <div class="card-content">
             <div class="media">
-              <div class="media-left">
-                <p class="card-header-title">Tu próximo evento</p>
-                <a href="/eventos" class="column is-two-thirds ">Ir a eventos</a>
+              <div class="media-content">
+                <p class="title is-4">Tu próximo evento</p>
+                <p class="subtitle is-6"><a href="/eventos">Ir a eventos</a></p>
               </div>
             </div>
           </div>
-          
-          <div class="card-content">
-            <div class="content">
+
+          <div class="card-content columns is-centered">
+            <div class="content container-event">
 
               <p>Todavía no tienes eventos, ¡Vamos a crear uno!</p>
 
@@ -31,7 +31,8 @@
               <!-- Mensaje cuando no tienes eventos -->
               <p v-if="eventos.length === 0">Aún no tienes eventos</p>
               <!-- Botón "Crear evento" -->
-              <router-link v-else-if="eventos.length > 0"  to="/create-event"><button class="button is-primary">Crear evento</button></router-link>
+              <router-link v-else-if="eventos.length > 0" to="/create-event"><button class="button is-primary">Crear
+                  evento</button></router-link>
             </div>
           </div>
         </div>
@@ -50,4 +51,10 @@ export default {
   }
 };
 </script>
+
+<style>
+.container-event {
+  text-align: center;
+}
+</style>
   

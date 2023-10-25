@@ -3,7 +3,7 @@
 
         <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <img src="@/assets/tan_tan.png" alt="Lightweight UI components for Vue.js based on Bulma">
+                <img src="@/assets/tan_tan.png" alt="">
             </b-navbar-item>
         </template>
 
