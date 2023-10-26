@@ -1,10 +1,15 @@
 <template>
   <div>
+
+    <SideBar></SideBar>
     <!-- Título con variable de nombre -->
 
 
 
     <!-- Contenedor o card de "Tus próximos eventos" -->
+
+
+
     <div class="columns is-centered">
       <div class="column is-10">
 
@@ -31,7 +36,7 @@
               <!-- Mensaje cuando no tienes eventos -->
               <p v-if="eventos.length === 0">Aún no tienes eventos</p>
               <!-- Botón "Crear evento" -->
-              <router-link v-else-if="eventos.length > 0" to="/create-event-info"><button class="button is-primary">Crear
+              <router-link v-else-if="eventos.length > 0" to="/create-event-info"><button class="button">Crear
                   evento</button></router-link>
             </div>
           </div>
@@ -42,14 +47,21 @@
 </template>
   
 <script>
+import SideBar from "@/components/SideBar.vue";
+
 export default {
+  name: 'HomeView',
+  components: {
+    SideBar
+  },
   data() {
     return {
-      variableNombre: "Jorge", // Cambia "Usuario" por tu variable de nombre real
-      eventos: [0] // Puedes cargar aquí tus eventos desde tu fuente de datos
+      variableNombre: "Jorge", // Ajusta el nombre según tus necesidades
+      eventos: [] // Inicializa el array de eventos vacío o con datos iniciales válidos
     };
   }
 };
+
 </script>
 
 <style>
