@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <nav-bar />
+    <side-bar />
+
+    <div :style="{'margin-left': sidebarWidth}">
+      
+    </div>
+
     <router-view />
     <footer-bar />
   </div>
@@ -13,6 +19,8 @@ export default {
   name: 'App',
   components: {
     NavBar
+  },
+  setup() {
   }
 }
 </script>

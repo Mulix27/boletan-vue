@@ -4,14 +4,14 @@
       <div class="content">
         <div class="media">
           <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="@/assets/tan_tan.png" alt="">
+            <figure class="image is-64x64">
+              <img src="@/assets/citas.png" alt="">
             </figure>
           </div>
 
           <div class="media-content">
             <p class="title">Información básica</p>
-            <p class="subtitle">Elige un nombre para tu evento. Añade detalles que destaquen por qué tu evento es único.
+            <p class="subtitle is-size-6">Elige un nombre para tu evento. Añade detalles que destaquen por qué tu evento es único.
             </p>
 
             <div class="field">
@@ -63,7 +63,7 @@
               <div class="media">
                 <div class="media-content">
                   <p class="title">Etiquetas</p>
-                  <p class="subtitle">Agrega etiquetas según tu el giro de tu evento</p>
+                  <p class="subtitle is-size-6">Agrega etiquetas según tu el giro de tu evento</p>
                   <b-field>
                     <b-taginput v-model="tags" maxlength="30" maxtags="5" placeholder="Agrega una etiqueta">
                     </b-taginput>
@@ -87,14 +87,14 @@
       <div class="content">
         <div class="media">
           <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="@/assets/tan_tan.png" alt="">
+            <figure class="image is-64x64">
+              <img src="@/assets/mapa.png" alt="">
             </figure>
           </div>
 
           <div class="media-content">
             <p class="title">Ubicación</p>
-            <p class="subtitle">Ayuda a la gente de la zona a descubrir el evento y asegúrate de que tus asistentes <br>
+            <p class="subtitle is-size-6">Ayuda a la gente de la zona a descubrir el evento y asegúrate de que tus asistentes <br>
               sepan adónde ir.</p>
             <section>
               <b-button v-model="banderaUbicacion" @click="banderaUbicacion = 1">Lugar</b-button>
@@ -125,14 +125,14 @@
       <div class="content">
         <div class="media">
           <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="@/assets/tan_tan.png" alt="">
+            <figure class="image is-64x64">
+              <img src="@/assets/calendario.png" alt="">
             </figure>
           </div>
 
           <div class="media-content">
             <p class="title">Fecha y hora</p>
-            <p class="subtitle">Informa a los asistentes cuándo empieza y termina el evento para que puedan <br>
+            <p class="subtitle is-size-6">Informa a los asistentes cuándo empieza y termina el evento para que puedan <br>
               organizarse.</p>
             <section>
 

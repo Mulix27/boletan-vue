@@ -1,7 +1,5 @@
 <template>
   <div>
-
-    <SideBar></SideBar>
     <!-- Título con variable de nombre -->
 
 
@@ -47,17 +45,12 @@
 </template>
   
 <script>
-import SideBar from "@/components/SideBar.vue";
 
 export default {
-  name: 'HomeView',
-  components: {
-    SideBar
-  },
   data() {
     return {
-      variableNombre: "Jorge", // Ajusta el nombre según tus necesidades
-      eventos: [] // Inicializa el array de eventos vacío o con datos iniciales válidos
+      variableNombre: "Jorge", 
+      eventos: [1] 
     };
   }
 };
