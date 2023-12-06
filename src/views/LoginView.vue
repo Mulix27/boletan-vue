@@ -22,7 +22,7 @@
                         </div>
                         <div class="field">
                             <p class="control">
-                                <button class="button is-success">
+                                <button style="background-color: #EE7F36" class="button is-success">
                                     Iniciar sesión
                                 </button>
                             </p>

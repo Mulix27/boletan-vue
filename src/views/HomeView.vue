@@ -20,7 +20,7 @@
             <div class="media">
               <div class="media-content">
                 <p class="title is-4">Tu próximo evento</p>
-                <p class="subtitle is-6"><a href="/eventos">Ir a eventos</a></p>
+                <p class="subtitle is-6"><a style="color:#EE7F36;" href="/eventos">Ir a eventos</a></p>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@
               <!-- Mensaje cuando no tienes eventos -->
               <p v-if="eventos.length === 0">Aún no tienes eventos</p>
               <!-- Botón "Crear evento" -->
-              <router-link v-else-if="eventos.length > 0" to="/create-event-info"><button class="button">Crear
+              <router-link v-else-if="eventos.length > 0" to="/create-event-info"><button style="background-color: #EE7F36; color: white" class="button">Crear
                   evento</button></router-link>
             </div>
           </div>

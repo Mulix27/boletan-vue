@@ -1,17 +1,18 @@
 <template>
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="container">
       <div class="content">
         <div class="media">
           <div class="media-left">
             <figure class="image is-64x64">
-              <img src="@/assets/citas.png" alt="">
+              <img class="icon-seccion" src="@/assets/citas.png" alt="">
             </figure>
           </div>
 
           <div class="media-content">
-            <p class="title">Información básica</p>
-            <p class="subtitle is-size-6">Elige un nombre para tu evento. Añade detalles que destaquen por qué tu evento es único.
+            <p class="title" style="color:#EE7F36;">Información básica</p>
+            <p class="subtitle is-size-6">Elige un nombre para tu evento. Añade detalles que destaquen por qué tu evento
+              es único.
             </p>
 
             <div class="field">
@@ -62,7 +63,7 @@
             <section>
               <div class="media">
                 <div class="media-content">
-                  <p class="title">Etiquetas</p>
+                  <p class="title" style="color:#EE7F36;">Etiquetas</p>
                   <p class="subtitle is-size-6">Agrega etiquetas según tu el giro de tu evento</p>
                   <b-field>
                     <b-taginput v-model="tags" maxlength="30" maxtags="5" placeholder="Agrega una etiqueta">
@@ -93,8 +94,9 @@
           </div>
 
           <div class="media-content">
-            <p class="title">Ubicación</p>
-            <p class="subtitle is-size-6">Ayuda a la gente de la zona a descubrir el evento y asegúrate de que tus asistentes <br>
+            <p class="title" style="color:#EE7F36;">Ubicación</p>
+            <p class="subtitle is-size-6">Ayuda a la gente de la zona a descubrir el evento y asegúrate de que tus
+              asistentes <br>
               sepan adónde ir.</p>
             <section>
               <b-button v-model="banderaUbicacion" @click="banderaUbicacion = 1">Lugar</b-button>
@@ -131,18 +133,18 @@
           </div>
 
           <div class="media-content">
-            <p class="title">Fecha y hora</p>
+            <p class="title" style="color:#EE7F36;">Fecha y hora</p>
             <p class="subtitle is-size-6">Informa a los asistentes cuándo empieza y termina el evento para que puedan <br>
               organizarse.</p>
             <section>
 
               <div>
-                
-                  <b-button @click="banderaDate = 1">Evento individual</b-button>
-               
-                
-                  <b-button @click="banderaDate = 0" class="ml-5">Evento recurrente</b-button>
-             
+
+                <b-button @click="banderaDate = 1">Evento individual</b-button>
+
+
+                <b-button @click="banderaDate = 0" class="ml-5">Evento recurrente</b-button>
+
               </div>
 
               <br>
@@ -196,7 +198,7 @@
               </div>
 
               <div v-else>
-              
+
               </div>
 
             </section>
@@ -210,7 +212,7 @@
 
     <div class="columns">
       <div class="column is-4 is-offset-10">
-        <router-link to="create-event-media"><b-button>Guardar y continuar</b-button></router-link>
+        <router-link to="create-event-media"><b-button style="background-color: #EE7F36; color:white">Guardar y continuar</b-button></router-link>
       </div>
     </div>
 
@@ -293,6 +295,7 @@ export default {
 .menu-text {
   padding-right: 12rem;
 }
+
 
 .linea {
   border: 1px solid #E5E5E5;

@@ -1,17 +1,17 @@
 <template>
     <div>
-        <div class="container">
+        <div class="container is-max-desktop">
             <div class="container">
                 <div class="content">
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="@/assets/tan_tan.png" alt="">
+                                <img src="@/assets/video.png" alt="">
                             </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title">Medios de evento</p>
-                            <p class="title">Imágenes</p>
+                            <p class="title" style="color: #EE7F36; font-size:40px">Medios de evento</p>
+                            <p class="title" style="color:#EE7F36;">Imágenes</p>
                             <p class="subtitle">Añade fotos para mostrar de qué irá tu evento.</p>
 
                             <div class="column is-half
@@ -43,7 +43,7 @@
                             <div class="linea"></div>
 
                             <div class="media-content">
-                                <p class="title">Vídeo</p>
+                                <p class="title" style="color:#EE7F36;">Vídeo</p>
                                 <p class="subtitle">Añade un enlace de vídeo de Youtube o Vimeo para mostrar el ambiente de
                                     tu
                                     evento. El vídeo aparecerá con las <br> imágenes de tu evento.</p>
@@ -67,12 +67,12 @@
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="@/assets/tan_tan.png" alt="">
+                                <img src="@/assets/descrip.png" alt="">
                             </figure>
                         </div>
 
                         <div class="media-content">
-                            <p class="title">Descripción</p>
+                            <p class="title" style="color:#EE7F36;">Descripción</p>
                             <p class="subtitle">Añade más detalles de tu evento como el programa, patrocinadores o invitados
                                 destacados.</p>
 
@@ -92,7 +92,7 @@
 
             <div class="columns">
                 <div class="column is-4 is-offset-10">
-                    <router-link to="create-event-media"><b-button>Guardar y continuar</b-button></router-link>
+                    <router-link to="create-event-media"><b-button style="background-color: #EE7F36; color: white">Guardar y continuar</b-button></router-link>
                 </div>
             </div>
 
